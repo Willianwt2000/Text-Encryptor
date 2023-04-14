@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    font-family: 'Chivo Mono', monospace;
+    background-color: aliceblue;
+    background-image: url(imagen/encriptar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Fondo de los Textarea */
+.grand-container{
+    min-height: 70vh;
+    min-width: 10vh;
+    /* background: lightblue;  fallback for old browsers */
+}
+
+
+/* Contenedor de los text Area */
+.encript-dis{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 50px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+/* Maquetacion de los text area */
+.text-encript{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #090a0edc;
+    margin-top: 5vh;
+}
+.text-decrypt{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 5vh;
+    background-color: #090a0edc;
+}
+button{
+    display: grid;
+    grid-row: 2/3;
+    width: 7rem;
+    height: 4rem;
+}
+::placeholder{
+    color: rgba(247, 242, 244, 0.644);
+    text-transform: none;
+    padding: 20px;
+}
+textarea{
+    width: 90vw;
+    min-height: 2vh;
+    height: 50vh;
+    box-sizing: border-box;
+    border-radius: 2.3%;
+    border: none;
+    resize: none;
+    outline: none;
+    color: rgb(253, 248, 252);
+    font-weight: lighter;
+    font-size: 2em;
+    margin: auto;
+    max-width: max-content;
+    text-transform: lowercase;
+    padding: 20px;
+    padding-top: 50px;
+    min-width: 420px;
+    box-shadow: 1px 0px 33px -4px rgba(32, 21, 21, 0.11);
+}
+/* Estilo de los textos */
+.style-text{
+    display: flex;
+    min-height: 4em;
+    justify-content: center;
+    align-items: center;
+    text-size-adjust: 100%;
+    /* text-align: center; */
+    color: rgb(20, 16, 14);
+    
+}
+
+/* Estilo de los botones */
+.contenedor-botones{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+.btn{
+    border: 1px solid rgba(208, 208, 208, 0.291);
+    box-shadow: -1px 1px 10px 0px rgba(39, 27, 27, 0.75);
+-webkit-box-shadow: -1px 1px 10px 0px rgba(0, 0, 0, 0.201);
+-moz-box-shadow: -1px 1px 10px 0px rgba(0, 0, 0, 0.17);
+    border-radius: 5%;
+    width: 15vw;
+    align-items: center;
+    margin-bottom: 50px;
+    color: rgb(15, 6, 10);
+    font-family: 'Chivo Mono', monospace;
+    font-weight: bolder;
+    font-size:  1.5vw;
+}
+
+.btn:hover{
+    border: 3px solid rgb(109, 26, 81);
+}
+
+#encrypt{
+    background-color: lightblue;
+}
+#desencriptar{
+    background-color: lightblue;
+}
+#copy{
+    background-color: lightblue;
+}
+
+.footer{
+    color: black;
+    text-align: center;
+}
